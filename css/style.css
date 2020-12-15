@@ -19,7 +19,8 @@ body{
     background-color: #b91450;
     text-align: center;
 }
-.container h1{
+.container h1,
+.container h2{
     color: #fff;
     text-transform: uppercase;
     font-size: 27px;
@@ -42,7 +43,7 @@ body{
 }
 .container .row .col label{
     margin-bottom: 15px;
-    
+    color: #b91450;
 }
 .container .box-form .row .col input, select{
     border-radius: 5px;
@@ -58,12 +59,33 @@ body{
     text-align: center;
 }
 .btn{
-    background-color: #ccc;
     color: #b91450;
+    background-color: #ccc;
+    font-weight: bold;
     border-radius: 5px;
     border : 1px solid grey;
     padding: 4px;
-    margin: 0 15px;
+    margin: 0 10px;
     text-decoration: none;
+    cursor: pointer;
 }
-
+.btn:hover{
+    color: #fff;
+    background-color: #bbb;
+}
+.container h2{
+    margin-top: 20px;
+}
+#box-biglietto{
+    max-width: 1200px;
+    background-color: #fff;
+    margin: auto;
+}
+.hidden{
+    opacity: 0;
+    transition: 0.5s;
+}
+.show{
+    opacity: 1;
+    transition: 0.5s;
+}
