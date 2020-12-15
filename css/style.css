@@ -31,16 +31,16 @@ body{
     border-radius: 10px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
-.container .box-form .row{
+.container .row{
     display: flex;
     justify-content: center;
 }
-.container .box-form .row .col{
+.container .row .col{
     display: flex;
     flex-direction: column;
     padding: 20px 30px;
 }
-.container .box-form .row .col label{
+.container .row .col label{
     margin-bottom: 15px;
     
 }
@@ -57,7 +57,7 @@ body{
 .container .box-form .row .col input::placeholder{
     text-align: center;
 }
-.container .box-form .row a.btn{
+.btn{
     background-color: #ccc;
     color: #b91450;
     border-radius: 5px;
