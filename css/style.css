@@ -4,13 +4,14 @@
     box-sizing: border-box;
 }
 
-
-
+/* GENERAL RULES */
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .container h1,
 .container .box-form{
     padding: 20px;
 }
-
 
 .container {
     width: 100%;
@@ -41,6 +42,20 @@
 }
 .container .box-form .row .col label{
     margin-bottom: 15px;
+    
+}
+.container .box-form .row .col input, select{
+    border-radius: 5px;
+    border: 1px solid #b91450;
+    padding: 10px;
+    text-align: center;
+}
+.container .box-form .row .col input:focus, select:focus{
+    color: #fff;
+    background-color: #b91450;
+}
+.container .box-form .row .col input::placeholder{
+    text-align: center;
 }
 .container .box-form .row a.btn{
     background-color: #ccc;
@@ -48,6 +63,7 @@
     border-radius: 5px;
     border : 1px solid grey;
     padding: 4px;
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
 }
+

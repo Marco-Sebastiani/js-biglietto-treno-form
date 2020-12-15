@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,17 +16,21 @@
         <div class="box-form">
             <!-- FIRST ROW -->
             <div class="row">
-
+                <!-- COL NOME -->
                 <div class="col">
                     <label for=""> Nome Cognome</label>
                     <input type="text" placeholder="inserisci il tuo nome">
                 </div>
+                <!-- / COL NOME -->
 
+                <!-- COL KM -->
                 <div class="col">
                     <label for=""> Km da percorrere</label>
-                    <input type="number" placeholder="inserisci i km">
+                    <input type="number" min="0" placeholder="inserisci i km">
                 </div>
+                <!-- / COL KM -->
 
+                <!-- COL ETA' -->
                 <div class="col">
                     <label for=""> Fascia d&#39;et&agrave;</label>
                     <select name="" id="" >
@@ -33,6 +39,7 @@
                         <option value="over">Over 65</option>
                     </select>  
                 </div>
+                <!-- / COL ETA' -->
 
             </div>
             <!-- / FIRST ROW -->
