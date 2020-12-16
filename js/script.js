@@ -1,4 +1,3 @@
-
 var element = document.getElementById("genera");
 element.addEventListener('click',
     function() {
@@ -7,7 +6,6 @@ element.addEventListener('click',
         var distanza = document.getElementById('km').value;     
         var eta = document.getElementById('eta').value;
         
-
         //VALORI GENERALI
         var prezzoTotale = distanza * 0.21;
         var message = 'Tariffa base';
@@ -15,10 +13,10 @@ element.addEventListener('click',
         //CALCOLIAMO IL PREZZO DEL BIGLIETTO
         if (eta == 'minorenne'){
             prezzoTotale -= (prezzoTotale * 20 / 100);
-            message = 'Sconto minorenne del 20%'
+            message = 'Sconto Minorenne del 20%'
         }   else if (eta == 'over') {
             prezzoTotale -= (prezzoTotale * 40 / 100);
-            message = 'Sconto maggiorenne del 40%'
+            message = 'Sconto Maggiorenne del 40%'
         }
 
         //ASSEGNAZIONE ALL'HTML DEI DATI ELABORATI
@@ -29,10 +27,8 @@ element.addEventListener('click',
         document.getElementById('costo').innerHTML = prezzoTotale.toFixed(2) + ' €';
 
         document.getElementById('box-biglietto').className = 'show';
-
     }
 );
-
 
 var buttonClear = document.getElementById("annulla");
 

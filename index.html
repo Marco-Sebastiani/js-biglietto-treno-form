@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calcola il prezzo del tuo biglietto</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<body>   
     <section class="container">
         <h1>calcola il prezzo del tuo biglietto</h1>
         <!-- FORM -->
@@ -22,14 +21,12 @@
                     <input id="nome" type="text" placeholder="Inserisci il tuo nome">
                 </div>
                 <!-- / COL NOME -->
-
                 <!-- COL KM -->
                 <div class="col">
                     <label for="km"> Km da percorrere</label>
                     <input id="km" type="number" min="0" placeholder="Inserisci i km">
                 </div>
                 <!-- / COL KM -->
-
                 <!-- COL ETA' -->
                 <div class="col">
                     <label for="eta"> Fascia d&#39;et&agrave;</label>
@@ -40,33 +37,27 @@
                     </select>  
                 </div>
                 <!-- / COL ETA' -->
-
             </div>
             <!-- / FIRST ROW -->
-
             <!-- SECOND ROW -->
             <div class="row">
                 <div id="genera" class="btn">Genera</div>
                 <div id="annulla" class="btn">Annulla</div>
             </div>
             <!-- / SECOND ROW -->
-
         </div>
         <!-- / FORM -->
-
         <!-- BOX-LOGO -->
         <h2>Il tuo biglietto</h2>
-        <div id="box-biglietto" class="hidden">
-
+        <div id="box-biglietto" class="hidden">           
             <h3>Dettaglio passeggeri</h3>
-            <div class="box-item-biglietto row">
-                <div class="col">
+            <div class="box-item-biglietto">
+                <div class="passenger">
                     <h3>Nome passeggero</h3>
                     <div id="name"></div>
                 </div>
-
                 <!-- TABLE DATA -->
-                <div class="col">
+                <div class="box-table">
                     <table>
                         <tr>
                             <th>Offerta</th>
@@ -87,7 +78,7 @@
                             <td>
                                 <span id="codice-cp"></span>
                             </td>
-
+                            
                             <td>
                                 <span id="costo"></span>
                             </td>
@@ -95,14 +86,10 @@
                     </table>
                 </div>
                 <!-- / TABLE DATA -->
-
             </div>
         </div>
         <!-- BOX-LOGO -->
-
-
     </section>
-
     <script src="js/script.js"></script>
 </body>
 </html>
